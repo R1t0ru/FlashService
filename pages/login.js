@@ -7,7 +7,7 @@ function Login(){
         <>
       <div className={styles.logincontainer}>
         <div className={styles.card}>
-          <div className={styles.center}><h2>Connexion</h2></div>
+          <div><h2>Connexion</h2></div>
           <div className={styles.centerInCard}>
           <div className={styles.labelTop_inputDown}>
             <label htmlFor="email">Email</label>
@@ -19,7 +19,7 @@ function Login(){
           </div>
           </div>
           <div className={styles.center}>
-            <button className={styles.button}><a href="/signin">Se connecter</a></button>
+            <button className={styles.button}><a href="/">Se connecter</a></button>
           </div>
         </div>
       </div>

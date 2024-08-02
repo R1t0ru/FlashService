@@ -7,6 +7,7 @@ function Signin() {
     <div className={styles.logincontainer}>
       <div className={styles.card}>
         <h2>Inscription</h2>
+        <div className={styles.centerInCard}>
         <div className={styles.labelTop_inputDown}>
           <label htmlFor="name">Nom du profil</label>
           <input
@@ -50,11 +51,10 @@ function Signin() {
             required
           />
         </div>
-        <div className={styles.center}>
-        <Link href="/">
-          <button className={styles.button}>S'inscrire</button>
-        </Link>
         </div>
+        <div className={styles.center}>
+            <button className={styles.button}><a href="/">S'inscrire</a></button>
+          </div>
       </div>
     </div>
   );
