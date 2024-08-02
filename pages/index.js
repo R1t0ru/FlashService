@@ -24,9 +24,11 @@ export default function Home() {
       ) : (
         <Signup/>
       )}
-      <a className={styles.no_underline}  onClick={toggleForm}>
+      <div className={styles.no_underline}>
+      <a onClick={toggleForm}>
         {isLogin ? "Pas encore inscrit ? S'inscrire" : 'Déjà inscrit ? Se connecter'}
       </a>
+      </div>
       </main>
       <footer>
         <Footer/>

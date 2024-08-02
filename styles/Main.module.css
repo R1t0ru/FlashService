@@ -65,14 +65,32 @@
 }
 
 .center{
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
+}
+
+.centerInCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .labelTop_inputDown{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 10px 0 10px 0;
+  width: 100%;
+}
+
+.no_underline{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  width: auto;
 }
 
 a.no_underline {

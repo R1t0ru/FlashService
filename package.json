@@ -14,5 +14,11 @@
     "react": "^18",
     "react-dom": "^18",
     "react-router-dom": "^6.24.1"
+  },
+  "devDependencies": {
+    "next": "14.2.3",
+    "nodemon": "^3.1.4",
+    "react": "^18",
+    "react-dom": "^18"
   }
 }
