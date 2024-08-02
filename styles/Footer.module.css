@@ -1,21 +1,32 @@
 .app_footer {
-    background-color: #B7B7B7;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .swipe_button {
-    background-color: #FCA311;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .swipe_button:hover {
-    background-color: #001D3D;
-  }
+  background-color: #B7B7B7;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: solid 2px red; */
+  max-height: 2rem;
+  min-height: 2rem;
+  min-width: 100vw;
+  padding: 10px;
+}
+
+.swipe_button {
+  background-color: #FCA311;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.swipe_button:hover {
+  background-color: #001D3D;
+}

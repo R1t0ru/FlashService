@@ -9,18 +9,19 @@ function MenuBurger() {
   };
 
   return (
-    <div>
-      <div className={styles.burgerMenu} onClick={toggleMenu}>
+    <div className={styles.burgerMenu} onClick={toggleMenu}>
         <div className={`${styles.line} ${isOpen ? styles.lineOpen : ''}`}></div>
         <div className={`${styles.line} ${isOpen ? styles.lineOpen : ''}`}></div>
         <div className={`${styles.line} ${isOpen ? styles.lineOpen : ''}`}></div>
-      </div>
-      <nav className={`${styles.menu} ${isOpen ? styles.menuOpen : ''}`}>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/login">Login</a></li>
-        </ul>
-      </nav>
+        {isOpen && (
+        <div className={styles.menu}>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

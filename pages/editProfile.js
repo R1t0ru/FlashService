@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import styles from '@/styles/EditProfile.module.css';
-import Link from 'next/link';
+import main from '@/styles/Main.module.css'
+import Footer from '@/components/footer';
+import Navigation from '@/components/nav';
 
 export default function EditProfile (){
-//   const history = useHistory();
 
   const [profile, setProfile] = useState({
     profileImage: '/profile.jpg',
@@ -24,15 +24,9 @@ export default function EditProfile (){
     }));
   };
 
-//   const handleSave = () => {
-//     history.push('/profile');
-//   };
-
-//   const handleCancel = () => {
-//     history.push('/profile');
-//   };
-
   return (
+    <div className={main.container}>
+    <Navigation/>
     <div className={styles.editProfilePage}>
       <h2 className={styles.title}>Modifier le Profil</h2>
       <form className={styles.form}>
@@ -83,9 +77,11 @@ export default function EditProfile (){
         </label>
         <div className={styles.buttons}>
           {/* <button className={styles.button} type="button" onClick={handleSave}>Sauvegarder</button> */}
-          {/* <button className={styles.button} type="button" onClick={handleCancel}><Link href="/Profile">Annuler</Link></button> */}
+          {/* <button className={styles.button} type="button" onClick={handleCancel}>Annuler</Link></button> */}
         </div>
       </form>
+    </div>
+    <Footer/>
     </div>
   );
 };

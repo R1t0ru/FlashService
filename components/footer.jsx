@@ -1,12 +1,16 @@
-import styles from "@/styles/Footer.module.css"
+import style from "@/styles/Nav.module.css"
 
-export default function Footer() {
+function  Footer() {
   return (
     <>
-      <footer className={styles.app_footer}>
-        <button className={styles.swipe_button}>Swipe Left</button>
-        <button className={styles.swipe_button}>Swipe Right</button>
-      </footer>
+        <div className={style.footer_navigation}>
+          <div></div>
+          <div>
+            <p>©Flash Service 2024</p>
+          </div>
+        </div>
     </>
   );
 }
+
+export default Footer;
