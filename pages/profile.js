@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from "@/components/nav";
-import Footer from "@/components/foot.jsx";
+import Footer from "@/components/footer";
 import ProfileCard from '@/components/ProfileCard';
 import styles from '@/styles/Profile.module.css';
 import Link from 'next/link';
