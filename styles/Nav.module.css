@@ -37,13 +37,5 @@
 }
 
 
-.footer_navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border: solid 2px red; */
-    max-height: 2rem;
-    min-height: 2rem;
-    min-width: 100vw;
-}
+
 
